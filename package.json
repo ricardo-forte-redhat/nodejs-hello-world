@@ -1,7 +1,9 @@
 {
-  "name": "my_package",
-  "description": "",
+  "name": "openshift-nodejs-hello-world",
   "version": "1.0.0",
+  "description": "A simple web hello world using NodeJs",
   "main": "app.js",
-  "author": ""
+  "scripts": {
+    "start": "node app.js"
+  }
 }
