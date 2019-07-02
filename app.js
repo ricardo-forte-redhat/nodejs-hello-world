@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
 
     body = body + process.env.HOSTNAME;
 
-    body = body + '   </body>\n' + '￿</html>';
+    body = body + '   </body>\n' + '</html>';
 
     res.end( body );
 });
