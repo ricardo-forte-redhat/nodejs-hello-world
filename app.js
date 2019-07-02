@@ -5,7 +5,7 @@ const port = 8080;
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Type', 'text/html');
 
     let body =
         '<html>\n' +
@@ -15,8 +15,8 @@ const server = http.createServer((req, res) => {
         '    <body>\n' +
         '        <h3>NodeJs Hello World!</h3>\n' +
         '        <br/>\n' +
-        '        My hostname is ￿';
-    
+        '        My hostname is ';
+
     body = body + process.env.HOSTNAME;
 
     body = body + '   </body>\n' + '￿</html>';
